@@ -2,7 +2,7 @@ import React from "react";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "outline" | "ghost";
+  variant?: "primary" | "outline" | "ghost" | "outlinelink";
   loading?: boolean;
 }
 
@@ -15,15 +15,15 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseStyles =
-    "inline-flex items-center justify-center rounded-md font-medium h-8 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed";
+    "inline-flex items-center justify-center cursor-pointer rounded-md font-medium h-10 transition-colors focus:outline-none disabled:opacity-60 disabled:cursor-not-allowed";
 
   const variants: Record<NonNullable<ButtonProps["variant"]>, string> = {
-    primary:
-      "bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-400 px-4",
-    secondary: "bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-400",
+    primary: "bg-primary-200 text-white hover:bg-primary-300 px-4",
     outline:
-      "border border-gray-400 text-gray-800 hover:bg-gray-100 focus:ring-gray-300",
-    ghost: "text-gray-700 hover:bg-gray-100 focus:ring-gray-200",
+      "bg-white text-primary-300 hover:text-white hover:bg-primary-300 px-4",
+    outlinelink:
+      "bg-white text-primary-300 hover:text-white hover:bg-primary-500 px-4",
+    ghost: "bg-primary-500 text-white hover:bg-primary-300 px-4",
   };
 
   return (

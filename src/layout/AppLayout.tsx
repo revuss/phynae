@@ -1,9 +1,11 @@
+import Hero from "./landing/Hero";
 import Navbar from "./Navbar";
 
 const AppLayout = () => {
   return (
-    <div>
+    <div className="font-secondary">
       <Navbar />
+      <Hero />
     </div>
   );
 };
