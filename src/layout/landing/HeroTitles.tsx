@@ -9,7 +9,7 @@ import Button from "../../components/ui/Button";
 const HeroTitles = () => {
   return (
     <div>
-      <h1 className="text-4xl sm:text-5xl font-primary font-extrabold text-white leading-tight">
+      <h1 className="text-4xl sm:text-[4vw] font-primary font-bold text-white leading-tight">
         {HERO_TITLE}
       </h1>
       <p className="mt-2 font-medium text-primary-100 max-w-xl">{HERO_DESC}</p>
