@@ -3,7 +3,7 @@ import HeroTitles from "./HeroTitles";
 
 const Hero = () => {
   return (
-    <header className="bg-primary-200 py-7 md:py-0 min-h-screen flex flex-col items-center justify-center">
+    <header className="bg-primary-500 py-7 md:py-0 min-h-screen flex flex-col items-center justify-center">
       <div className="max-w-[92%] mx-auto grid place-items-center grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <HeroTitles />
         <div className="relative mt-10">
@@ -18,7 +18,7 @@ const Hero = () => {
               return (
                 <li
                   key={title}
-                  className={`relative z-10 w-full max-w-sm p-5 rounded-2xl bg-white/15 backdrop-blur-md border border-white/10 shadow-xl transition-all duration-500 hover:scale-105 hover:bg-white/20 hover:shadow-2xl ${offsets[index]} animate-float`}
+                  className={`relative z-10 w-full max-w-sm p-5 rounded-2xl bg-white/35 backdrop-blur-md border border-primary-200 shadow-xl transition-all duration-500 hover:scale-105 hover:bg-white/40 hover:shadow-2xl ${offsets[index]} animate-float`}
                 >
                   <div className="flex gap-3 items-start">
                     <div>
